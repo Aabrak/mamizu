@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamizu - ver 0.3</title>
+</head>
+<body>
+
+    <!-- Styles -->
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: sans-serif
+        }
+
+        #radios {
+            background-color: rgba(0, 0, 0, 0.2);
+
+            padding: 10px;
+            margin-left: 30%;
+
+            font-size: 24px;
+            color: white;
+
+            position: absolute;
+            z-index: 10
+        }
+
+        label {
+            padding-right: 45px;
+        }
+
+        #can {
+            /* background-image: url("bg.jpg"); */
+            background-color: #333;
+            position: relative;
+            /* transform: rotate(270deg) */
+
+        }
+
+    </style>
+
+    <!-- Commands -->
+    <div id="radios">
+        <input type="radio" id="destroy" name="command" value="0"/>
+        <label for="destroy">Eraser</label>
+
+        <input type="radio" id="water" name="command" value="1"/>
+        <label for="water">Water</label>
+
+        <input type="radio" id="lava" name="command" value="3"/>
+        <label for="lava">Lava</label>
+
+        <input type="radio" id="build" name="command" value="2"/>
+        <label for="build">Glass</label>
+        
+        <input type="checkbox" id="container"/>
+        <label for="container">Container</label>
+        
+        <input type="checkbox" id="rainfall"/>
+        <label for="rainfall">Rainfall</label>
+    </div>
+
+    <div id="cellcountable">
+        
+    </div>
+
+    <!-- Canvas -->
+    <canvas id="can"></canvas>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>
