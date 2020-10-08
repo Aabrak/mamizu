@@ -268,7 +268,7 @@ function cell_bloom(grid, x, y) {
 
 rows = Math.floor(can.width / res)
 cols = Math.floor(can.height / res)
-let box = make2DArray(rows, cols)
+let box = make2DArray(cols, rows)
 log(`Initiated a grid of\nrows: ${rows}\ncols: ${cols}`)
 
 // tog(20, 10)
